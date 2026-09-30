@@ -6,6 +6,36 @@
  * categories, or to add, remove, and modify watches and perfumes.
  */
 
+import watch1Img from '../assets/images/watch_1_rado_gold_classic_1790797268751.jpg';
+import watch2Img from '../assets/images/watch_2_rado_gold_diamond_dial_1790797316999.jpg';
+import watch3Img from '../assets/images/watch_3_rado_gold_premium_1790797328581.jpg';
+import watch4Img from '../assets/images/watch_4_gold_luxury_style_1790797341049.jpg';
+import watch5Img from '../assets/images/watch_5_gold_classic_chain_1790797355116.jpg';
+import watch6Img from '../assets/images/watch_6_gold_elegant_dial_1790797366555.jpg';
+import watch7Img from '../assets/images/watch_7_rado_premium_gold_1790797377055.jpg';
+import watch8Img from '../assets/images/watch_8_gold_stone_dial_1790797388246.jpg';
+import watch9Img from '../assets/images/watch_9_gold_luxury_bracelet_1790797398832.jpg';
+import watch10Img from '../assets/images/watch_10_gold_premium_edition_1790797409988.jpg';
+import perfumeRoyalOudImg from '../assets/images/perfume_royal_oud_1790794441957.jpg';
+import perfumeAmberElixirImg from '../assets/images/perfume_amber_elixir_1790794452229.jpg';
+import heroWatchPerfumeImg from '../assets/images/hero_watch_perfume_1790794402875.jpg';
+
+export const PRODUCT_IMAGES = {
+  watch1: watch1Img,
+  watch2: watch2Img,
+  watch3: watch3Img,
+  watch4: watch4Img,
+  watch5: watch5Img,
+  watch6: watch6Img,
+  watch7: watch7Img,
+  watch8: watch8Img,
+  watch9: watch9Img,
+  watch10: watch10Img,
+  perfumeRoyalOud: perfumeRoyalOudImg,
+  perfumeAmberElixir: perfumeAmberElixirImg,
+  heroWatchPerfume: heroWatchPerfumeImg,
+};
+
 export const STORE_CONFIG = {
   brandName: 'Royal Time & Scents',
   ownerName: 'Hafiz Haider',
@@ -25,7 +55,7 @@ export const STORE_CONFIG = {
   currency: 'PKR',
   freeDeliveryThreshold: 4000,
   standardDeliveryFee: 250,
-  heroImage: '/src/assets/images/watch_1_rado_gold_classic_1790797268751.jpg',
+  heroImage: watch1Img,
 };
 
 export type ProductType = 'watch' | 'perfume';
@@ -93,7 +123,7 @@ export const CATEGORIES: CategoryInfo[] = [
     group: 'Watches',
     subtitle: 'Rado-style gold classic & chain replica/copy watches',
     itemCountLabel: 'PKR 2,400 – 4,500',
-    image: '/src/assets/images/watch_1_rado_gold_classic_1790797268751.jpg',
+    image: watch1Img,
   },
   {
     id: "Women's Watches",
@@ -101,7 +131,7 @@ export const CATEGORIES: CategoryInfo[] = [
     group: 'Watches',
     subtitle: 'Gold diamond dial & stone bracelet replica/copy watches',
     itemCountLabel: 'PKR 2,800 – 5,400',
-    image: '/src/assets/images/watch_2_rado_gold_diamond_dial_1790797316999.jpg',
+    image: watch2Img,
   },
   {
     id: 'Luxury Watches',
@@ -109,7 +139,7 @@ export const CATEGORIES: CategoryInfo[] = [
     group: 'Watches',
     subtitle: 'Rado-style premium gold & stone-dial replica/copy editions',
     itemCountLabel: 'PKR 3,800 – 5,800',
-    image: '/src/assets/images/watch_8_gold_stone_dial_1790797388246.jpg',
+    image: watch8Img,
   },
   {
     id: "Men's Perfumes",
@@ -117,7 +147,7 @@ export const CATEGORIES: CategoryInfo[] = [
     group: 'Perfumes',
     subtitle: 'Smoky Cambodian oud, spiced leather & cedarwood extraits',
     itemCountLabel: 'Extrait & Eau de Parfum',
-    image: '/src/assets/images/perfume_royal_oud_1790794441957.jpg',
+    image: perfumeRoyalOudImg,
   },
   {
     id: "Women's Perfumes",
@@ -125,7 +155,7 @@ export const CATEGORIES: CategoryInfo[] = [
     group: 'Perfumes',
     subtitle: 'Damask rose, saffron nectar, white jasmine & cashmere musk',
     itemCountLabel: 'Floral & Amber Elixirs',
-    image: '/src/assets/images/perfume_amber_elixir_1790794452229.jpg',
+    image: perfumeAmberElixirImg,
   },
   {
     id: 'Unisex Fragrances',
@@ -133,7 +163,7 @@ export const CATEGORIES: CategoryInfo[] = [
     group: 'Perfumes',
     subtitle: 'Artisanal ambergris, imperial saffron & velvet sandalwood',
     itemCountLabel: 'Signature Niche Blends',
-    image: '/src/assets/images/perfume_royal_oud_1790794441957.jpg',
+    image: perfumeRoyalOudImg,
   },
 ];
 
@@ -158,7 +188,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 3200,
     oldPrice: 4000,
     discountPercent: 20,
-    image: '/src/assets/images/watch_1_rado_gold_classic_1790797268751.jpg',
+    image: watch1Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -184,7 +214,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 3600,
     oldPrice: 4500,
     discountPercent: 20,
-    image: '/src/assets/images/watch_2_rado_gold_diamond_dial_1790797316999.jpg',
+    image: watch2Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -210,7 +240,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 4200,
     oldPrice: 5200,
     discountPercent: 19,
-    image: '/src/assets/images/watch_3_rado_gold_premium_1790797328581.jpg',
+    image: watch3Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -236,7 +266,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 3800,
     oldPrice: 4700,
     discountPercent: 19,
-    image: '/src/assets/images/watch_4_gold_luxury_style_1790797341049.jpg',
+    image: watch4Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -261,7 +291,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 2400,
     oldPrice: 3000,
     discountPercent: 20,
-    image: '/src/assets/images/watch_5_gold_classic_chain_1790797355116.jpg',
+    image: watch5Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -287,7 +317,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 2800,
     oldPrice: 3500,
     discountPercent: 20,
-    image: '/src/assets/images/watch_6_gold_elegant_dial_1790797366555.jpg',
+    image: watch6Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -312,7 +342,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 4500,
     oldPrice: 5500,
     discountPercent: 18,
-    image: '/src/assets/images/watch_7_rado_premium_gold_1790797377055.jpg',
+    image: watch7Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -338,7 +368,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 4900,
     oldPrice: 6000,
     discountPercent: 18,
-    image: '/src/assets/images/watch_8_gold_stone_dial_1790797388246.jpg',
+    image: watch8Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -364,7 +394,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 5400,
     oldPrice: 6600,
     discountPercent: 18,
-    image: '/src/assets/images/watch_9_gold_luxury_bracelet_1790797398832.jpg',
+    image: watch9Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'In Stock',
     sizes: [
@@ -389,7 +419,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 5800,
     oldPrice: 7000,
     discountPercent: 17,
-    image: '/src/assets/images/watch_10_gold_premium_edition_1790797409988.jpg',
+    image: watch10Img,
     imageStyle: 'scale-105 object-center',
     stockStatus: 'Limited Stock',
     sizes: [
@@ -418,7 +448,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 3800,
     oldPrice: 4800,
     discountPercent: 20,
-    image: '/src/assets/images/perfume_royal_oud_1790794441957.jpg',
+    image: perfumeRoyalOudImg,
     imageStyle: 'brightness-100 contrast-105',
     stockStatus: 'In Stock',
     fragranceType: 'Extrait de Parfum',
@@ -447,7 +477,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 3400,
     oldPrice: 4200,
     discountPercent: 19,
-    image: '/src/assets/images/perfume_amber_elixir_1790794452229.jpg',
+    image: perfumeAmberElixirImg,
     imageStyle: 'brightness-100 contrast-105',
     stockStatus: 'In Stock',
     fragranceType: 'Eau de Parfum Intense',
@@ -476,7 +506,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 3200,
     oldPrice: 4000,
     discountPercent: 20,
-    image: '/src/assets/images/perfume_amber_elixir_1790794452229.jpg',
+    image: perfumeAmberElixirImg,
     imageStyle: 'scale-105 brightness-105 saturate-110',
     stockStatus: 'In Stock',
     fragranceType: 'Eau de Parfum',
@@ -505,7 +535,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 2900,
     oldPrice: 3600,
     discountPercent: 19,
-    image: '/src/assets/images/perfume_royal_oud_1790794441957.jpg',
+    image: perfumeRoyalOudImg,
     imageStyle: 'scale-105 contrast-110',
     stockStatus: 'In Stock',
     fragranceType: 'Eau de Parfum',
@@ -533,7 +563,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 2800,
     oldPrice: 3500,
     discountPercent: 20,
-    image: '/src/assets/images/perfume_amber_elixir_1790794452229.jpg',
+    image: perfumeAmberElixirImg,
     imageStyle: 'brightness-110 contrast-100',
     stockStatus: 'In Stock',
     fragranceType: 'Eau de Parfum',
@@ -561,7 +591,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 4200,
     oldPrice: 5200,
     discountPercent: 19,
-    image: '/src/assets/images/hero_watch_perfume_1790794402875.jpg',
+    image: heroWatchPerfumeImg,
     imageStyle: 'object-right scale-105 contrast-105',
     stockStatus: 'Limited Stock',
     fragranceType: 'Extrait de Parfum',
@@ -590,7 +620,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 4500,
     oldPrice: 5500,
     discountPercent: 18,
-    image: '/src/assets/images/perfume_royal_oud_1790794441957.jpg',
+    image: perfumeRoyalOudImg,
     imageStyle: 'brightness-95 contrast-115',
     stockStatus: 'In Stock',
     fragranceType: 'Extrait de Parfum',
@@ -618,7 +648,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 3500,
     oldPrice: 4400,
     discountPercent: 20,
-    image: '/src/assets/images/perfume_amber_elixir_1790794452229.jpg',
+    image: perfumeAmberElixirImg,
     imageStyle: 'contrast-105 saturate-95',
     stockStatus: 'In Stock',
     fragranceType: 'Eau de Parfum',

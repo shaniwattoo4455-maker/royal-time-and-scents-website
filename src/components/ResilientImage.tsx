@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Watch, Sparkles } from 'lucide-react';
 
 interface ResilientImageProps {
@@ -17,6 +17,10 @@ export const ResilientImage: React.FC<ResilientImageProps> = ({
   title,
 }) => {
   const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    setHasError(false);
+  }, [src]);
 
   if (hasError || !src) {
     return (

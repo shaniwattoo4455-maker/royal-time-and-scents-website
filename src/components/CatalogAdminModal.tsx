@@ -6,6 +6,7 @@ import {
   StockStatus,
   formatPKR,
   CATEGORIES,
+  PRODUCT_IMAGES,
 } from '../data/products';
 
 interface CatalogAdminModalProps {
@@ -22,51 +23,51 @@ interface CatalogAdminModalProps {
 const DEFAULT_IMAGES = [
   {
     label: '1. Rado Style Gold Classic Watch',
-    url: '/src/assets/images/watch_1_rado_gold_classic_1790797268751.jpg',
+    url: PRODUCT_IMAGES.watch1,
   },
   {
     label: '2. Rado Style Gold Diamond Dial Watch',
-    url: '/src/assets/images/watch_2_rado_gold_diamond_dial_1790797316999.jpg',
+    url: PRODUCT_IMAGES.watch2,
   },
   {
     label: '3. Rado Style Gold Premium Watch',
-    url: '/src/assets/images/watch_3_rado_gold_premium_1790797328581.jpg',
+    url: PRODUCT_IMAGES.watch3,
   },
   {
     label: '4. Gold Luxury Style Watch',
-    url: '/src/assets/images/watch_4_gold_luxury_style_1790797341049.jpg',
+    url: PRODUCT_IMAGES.watch4,
   },
   {
     label: '5. Gold Classic Chain Watch',
-    url: '/src/assets/images/watch_5_gold_classic_chain_1790797355116.jpg',
+    url: PRODUCT_IMAGES.watch5,
   },
   {
     label: '6. Gold Elegant Dial Watch',
-    url: '/src/assets/images/watch_6_gold_elegant_dial_1790797366555.jpg',
+    url: PRODUCT_IMAGES.watch6,
   },
   {
     label: '7. Rado Style Premium Gold Watch',
-    url: '/src/assets/images/watch_7_rado_premium_gold_1790797377055.jpg',
+    url: PRODUCT_IMAGES.watch7,
   },
   {
     label: '8. Gold Stone Dial Watch',
-    url: '/src/assets/images/watch_8_gold_stone_dial_1790797388246.jpg',
+    url: PRODUCT_IMAGES.watch8,
   },
   {
     label: '9. Gold Luxury Bracelet Watch',
-    url: '/src/assets/images/watch_9_gold_luxury_bracelet_1790797398832.jpg',
+    url: PRODUCT_IMAGES.watch9,
   },
   {
     label: '10. Gold Premium Edition Watch',
-    url: '/src/assets/images/watch_10_gold_premium_edition_1790797409988.jpg',
+    url: PRODUCT_IMAGES.watch10,
   },
   {
     label: 'Royal Oud Perfume Studio',
-    url: '/src/assets/images/perfume_royal_oud_1790794441957.jpg',
+    url: PRODUCT_IMAGES.perfumeRoyalOud,
   },
   {
     label: 'Amber Elixir Perfume Studio',
-    url: '/src/assets/images/perfume_amber_elixir_1790794452229.jpg',
+    url: PRODUCT_IMAGES.perfumeAmberElixir,
   },
 ];
 

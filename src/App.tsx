@@ -23,6 +23,7 @@ import {
   CATEGORIES,
   INITIAL_PRODUCTS,
   CUSTOMER_REVIEWS,
+  PRODUCT_IMAGES,
   Product,
   ProductCategory,
   formatPKR,
@@ -38,9 +39,9 @@ import { CatalogAdminModal } from './components/CatalogAdminModal';
 import { ResilientImage } from './components/ResilientImage';
 
 const STORAGE_KEYS = {
-  PRODUCTS: 'rts_catalog_products_v3',
-  CART: 'rts_shopping_cart_v3',
-  WHATSAPP: 'rts_whatsapp_number_v3',
+  PRODUCTS: 'rts_catalog_products_v4',
+  CART: 'rts_shopping_cart_v4',
+  WHATSAPP: 'rts_whatsapp_number_v4',
 };
 
 export default function App() {
@@ -1118,7 +1119,7 @@ export default function App() {
               <div className="lg:col-span-6 grid grid-cols-2 gap-4">
                 <div className="rounded-xl overflow-hidden border border-white/10 bg-[#141418] aspect-square">
                   <ResilientImage
-                    src="/src/assets/images/watch_8_gold_stone_dial_1790797388246.jpg"
+                    src={PRODUCT_IMAGES.watch8}
                     alt="Gold Stone Dial Watch"
                     fallbackType="watch"
                     title="Gold Stone Dial Watch"
@@ -1127,7 +1128,7 @@ export default function App() {
                 </div>
                 <div className="rounded-xl overflow-hidden border border-white/10 bg-[#141418] aspect-square">
                   <ResilientImage
-                    src="/src/assets/images/perfume_royal_oud_1790794441957.jpg"
+                    src={PRODUCT_IMAGES.perfumeRoyalOud}
                     alt="Artisanal oud perfume bottle"
                     fallbackType="perfume"
                     title="Signature Perfumes"
